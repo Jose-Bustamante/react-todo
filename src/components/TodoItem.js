@@ -1,10 +1,10 @@
 import React from 'react'
 
 export function TodoItem(props) {
-  const { item } = props;
+  const { item, index } = props;
 
   return (
-    <li key={item.key} onClick={() => this.props.deleteItem(item.key)}>
+    <li key={index}>
       {item.text}
     </li>
   )

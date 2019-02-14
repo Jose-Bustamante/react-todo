@@ -20,7 +20,7 @@ class App extends Component { // same as class App extends React.Component
 
   }
   addItem = e => {
-
+    console.log('SUBMIT!');
   }
 
   removeLastItem() { // This one you need to bind() to use 'this'
@@ -34,7 +34,7 @@ class App extends Component { // same as class App extends React.Component
           addItem={this.addItem}
           handleInput={this.handleInput}
         />
-        <TodoItems entries={this.state.items} deleteItem={this.deleteItem} />
+        <TodoItems entries={this.state.items} />
       </div>
     )
   }
